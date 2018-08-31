@@ -1565,6 +1565,8 @@ client.on("message", message => {
 	var msg = message.content.toLowerCase();
 	if( !message.guild ) return;
 	if( !msg.startsWith( prefix + 'role' ) ) return;
+	if (message.author.id !== '371696327005831169') return message.reply('** -_- من جدك لا تاول :joy: **')
+	if(!message.author.id === '371696327005831169') return;
 	if(!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send(' **__ليس لديك صلاحيات__**');
 	if( msg.toLowerCase().startsWith( prefix + 'roleremove' ) ){
 		if( !args[0] ) return message.reply( '**:x: يرجى وضع الشخص المراد سحب منه الرتبة**' );
