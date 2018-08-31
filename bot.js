@@ -327,14 +327,15 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('>bcall')){
- if (message.author.id !== '349616310734553088') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === '349616310734553088') return;
+ if (message.author.id !== '483686172221243402') return message.reply('** -_- من جدك لا تاول :joy: **')
+ if(!message.author.id === '483686172221243402') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
 })
 }
 });
+
 
 const prefix = "-"
 client.on('message', async msg => { 
@@ -383,7 +384,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("Speed Bot")
+					.setFooter("C r y s t a l Bot")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -523,7 +524,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-v";
-const devs = ['349616310734553088','335027415619338240'];
+const devs = ['483686172221243402'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -546,6 +547,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 });
+
 
 const codes = {
     ' ': '   ',
@@ -729,6 +731,7 @@ const zead = [
    '*** احد ما خرج من المنزل ***',
    '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدني في نشر البوت وادخل هذا السيرفر  ***'
 ];
+
  client.on('message', message => {
  if (message.content.startsWith('-مريم')) {
   var mariam= new Discord.RichEmbed()
@@ -1620,6 +1623,7 @@ client.on('message', message => {
     }
 });
 
+
 var AsciiTable = require('ascii-data-table').default
 client.on('message', message =>{
 
@@ -1835,6 +1839,7 @@ var fkk =[
 
 
    ];
+
 
 
    client.on("message", async message => {
@@ -2420,6 +2425,7 @@ if (message.content.startsWith("-cv")) {
 });
 
 
+
 client.on("message", (message) => {
     if (message.content.startsWith('-delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
@@ -2430,6 +2436,8 @@ client.on("message", (message) => {
         channel.delete()
     }
 });  
+
+   
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
