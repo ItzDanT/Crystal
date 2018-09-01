@@ -327,7 +327,7 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('>bcall')){
- if (message.author.id !== '483686172221243402') return message.reply('** -_- من جدك لا تاول :joy: **')
+ if (message.author.id !== '483686172221243402') return message.reply('** -_- من جدك لا تحاول :joy: **')
  if(!message.author.id === '483686172221243402') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
